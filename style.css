@@ -1,0 +1,394 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Implementa la fuente*/
+body {
+  font-family: "Raleway", sans-serif;
+  /*font-family: 'Caveat', cursive; esta para el logo*/
+  height: 100%;
+  margin: auto;
+  overflow-x: hidden;
+  /*overflow-y: hidden;*/
+}
+
+.portafolio,
+.skills .inicio {
+  color: rgb(35, 40, 42);
+  /*color: whitesmoke;
+  /* background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+*/
+  background-color: #e9e9e9;
+}
+
+.barra {
+  /*background-color: rgb(178, 203, 211);*/
+  color: #003b4d;
+  background-image: linear-gradient(
+    to top,
+    #e9e9e9 0%,
+    #b2cbd3 99%,
+    #b2cbd3 100%
+  );
+  /*background-color: gray;
+  /*opacity: 80%;
+  color: #d3d3d3;
+  /*z-index: 9999;*/
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  position: absolute; /*fixed para que se vea siempre*/
+  overflow: hidden;
+}
+nav {
+  width: 100%;
+  height: 8vh;
+  margin: auto;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 20px 20px;
+  /*background-color: black;*/
+  justify-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-size: 16px;
+}
+.barra #about {
+  grid-column: 2/3;
+  /*float: right;*/
+}
+
+.barra h3 {
+  width: 100%;
+  /*height: 100%;*/
+  border: none;
+  /*vertical-align: middle;*/
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  /*padding: 1px;*/
+  letter-spacing: 1px;
+  font-size: 16px;
+  display: none;
+}
+
+.page {
+  /*z-index: 2;*/
+  min-height: 100vh;
+
+  /*margin: auto;
+  box-sizing: border-box;*/
+  display: grid;
+  grid-template-columns: 2em 1fr 1fr 1fr 2em;
+  /*margin: 0em 1em 0em 1em;
+  /*vertical-align: top;*/
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.detalle {
+  grid-column: 2/4;
+  /*align-self: center;
+  float: left;*/
+}
+
+h1 {
+  /*font-family: "Cormorant Garamond", serif; esto se va a poner 
+  en el logo, cuando se cambie de pestaña, para volver al inicio*/
+  font-weight: bold;
+  font-size: 40px;
+  padding: 0px 5px 20px 0px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
+}
+
+.detalle p {
+  font-size: 16px;
+  padding: 50px 100px 0px 0px;
+}
+/*img {
+  width: fit-content;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+  align-self: center;
+  /*width: auto;
+}*/
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  min-width: 283px;
+  border-radius: 20px;
+}
+/*A los 925 px, la foto debe bajar y el texto comenzar a 
+ser mas pequeño*/
+
+.barra h3:hover {
+  color: rgb(0, 141, 185);
+  /*color: white;*/
+  cursor: pointer;
+}
+
+.inicio {
+  padding: 0% 5% 0% 5%;
+  text-align: center;
+}
+.inicio h2 {
+  padding: 10px 0px 10px 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.inicio,
+.sobre,
+.software {
+  background-color: whitesmoke;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.skills,
+.software {
+  padding-bottom: 2em;
+}
+.func {
+  /*margin: 0% 5% 0% 5%;*/
+  /*margin: 1em 1em 0em 1em;*/
+  display: flex;
+  overflow-x: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.funciones {
+  /*margin-left: 20px;*/
+
+  box-sizing: border-box;
+  display: inline-block;
+
+  vertical-align: middle;
+  /*width: 33%;*/
+  /*padding: 2% 0% 0% 0%;*/
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  min-width: 275px;
+  height: auto;
+}
+
+.imagen {
+  box-sizing: border-box;
+  display: flex;
+  /*vertical-align: top;*/
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+}
+
+.texto {
+  /*vertical-align: top;*/
+  margin: 0% 5% 0% 5%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.texto h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5% 0% 5% 0%;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.texto p {
+  font-size: 15px;
+  /*padding: 0% 0% 3% 1%;*/
+  width: 100%;
+  text-align: center;
+}
+.imagen svg {
+  width: 20vw;
+  height: auto;
+  min-width: 150px;
+}
+.software .func .funciones .imagen {
+  width: 200px;
+  height: 100px;
+  min-width: 150px;
+  margin: auto;
+}
+.skills .func .funciones .imagen {
+  width: 200px;
+  height: auto;
+  min-width: 150px;
+  margin: auto;
+}
+.inicio p {
+  padding-bottom: 2em;
+}
+.italic {
+  font-style: italic;
+}
+
+#titulo {
+  padding-top: 2em;
+}
+
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 2em 1fr 2em;
+    grid-template-rows: 2em 1fr 1fr 2em;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    /*position: relative;
+    top: 3.5vh;*/
+    min-height: 50vh;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+  }
+  .detalle {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    box-sizing: border-box;
+  }
+
+  .detalle p {
+    padding: 10px;
+  }
+  .hero {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    box-sizing: border-box;
+    display: flex;
+    vertical-align: bottom;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero img {
+    min-width: 200px;
+    width: 200px;
+    height: auto;
+    content: url("/img/nel.png");
+  }
+  nav {
+    z-index: 1;
+  }
+  .barra h3 {
+    display: none;
+    z-index: 1;
+  }
+  /*Quita la barra de desplazamiento :)*/
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .page {
+    grid-template-columns: 2em 1fr 2em;
+    grid-template-rows: 2em 1fr 1fr 2em;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    /*position: relative;
+    top: 3.5vh;*/
+    min-height: 50vh;
+    box-sizing: border-box;
+    z-index: 5;
+    position: relative;
+  }
+  .detalle {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    box-sizing: border-box;
+  }
+
+  .detalle p {
+    padding: 10px;
+  }
+  .hero {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    box-sizing: border-box;
+    display: flex;
+    vertical-align: bottom;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero img {
+    min-width: 200px;
+  }
+  nav {
+    z-index: 1;
+  }
+  .barra h3 {
+    display: none;
+    z-index: 1;
+  }
+}
+@media (min-width: 1400px) {
+  .barra h3 {
+    font-size: 1.5vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  p,
+  .detalle p {
+    font-size: 1.5vw;
+  }
+  .hero img {
+    max-width: 30vw;
+    height: auto;
+  }
+
+  .funciones {
+    min-width: 40vw;
+  }
+  .texto p {
+    font-size: 1.5vw;
+  }
+  .texto h4 {
+    font-size: 1.8vw;
+  }
+}
+
+/* en visualizacion de datos
+le tengo que poner un enlace, para los proyectos
+y poner el tema ese de la toma de tiempos
+y el rendimiento de los cajeros*/
